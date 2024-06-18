@@ -1,100 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css"/>
-    <title>Personal Website</title>
-</head>
-<body>
-    <!-- Header/NAV Bar-->
-    <div id="header">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Personal Portfolio Website</title>
+        <link href="styles2.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="navbar navbar-expand bg-dark">
+            <div class="container-fluid py-2">
+                <ul class="navbar-nav">
+                    <li class="navbar-item mx-2"><a class="nav-link text-light" href="#home">Home</a></li>
+                    <li class="navbar-item mx-2"><a class="nav-link text-light" href="#about">About</a></li>
+                    <li class="navbar-item mx-2"><a class="nav-link text-light" href="#projects">Projects</a></li>
+                    <li class="navbar-item mx-2"><a class="nav-link text-light" href="#contact">Contact</a></li>
                 </ul>
-            </nav>
-        </div>
-    </div>
+            </div>
+        </div>   
 
+        <section id="home">
+            <div class="container-fluid home-screen-container bg-black">
+                <h1 class="text-light header">Hello, I'm Rafael Romo</h1>
+                <p class="text-light subheader">A computer science student at Columbia University.</p>
+            </div>
+        </section>
 
-    <!-- HOME Section -->
-    <section id="home" class="home">
-        <div class="home-container">
-            <h1>Hello, I'm <span>Rafael Romo</span></h1>
-            <p>A <span>Computer Science</span> student at <span>Columbia University</span></p>
-        </div>
-    </section>
+        <section id="about">
+            <div class="container-fluid full-screen-container text-bg-dark">
+                <h2 class="text-light header">About</h2>
+                <div class="row">
+                    <div class="col-1">
 
-    <!-- ABOUT Section -->
-    <section id="about" class="about">
-        <div class="about-container">
-            <div class="row">
-                <div class="row-1">
-                    <img src="brooklyn_water.jpg">
-                </div>
-                <div class="row-2">
-                    <h2>About Me</h2>
-                    <p class="description">My name is <span>Rafael Romo</span> and I am in Columbia's <span>Class of 2027</span>, majoring in <span>Computer Science</span> 
-                    and minoring in <span>Sustainable Engineering</span>. I am a part of Columbia's <span>Society of Hispanic Professional Engineers</span> 
-                    (SHPE) and am also on the <span>Division I soccer team</span>. I am a <span>Questbridge Scholar</span> and was awarded a full-ride scholarship
-                    to Columbia through the college match program. During my free time I enjoy hanging out with <span>friends</span>, listening to and
-                    making <span>music</span>, watching and playing <span>soccer</span>, and <span>reading.</span>
-                    </p>
-                    <h5 class="skills">Skills</h5>
-                    <p class="skills-description">Java, Python, HTML, CSS, C++, MATLab, Adobe Illustrator, Adobe Photoshop</p>
-                    <h6 class="resume"><span class="oh">Oh,</span> here is my <span><a href="https://rafaromo23.github.io/RafaelRomo_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></span>.</h6>
+                    </div>
+                    <div class="col-4 image-container mt-5 ml-1">
+                        <img src="brooklyn_water.jpg" class="img-fluid image">
+                    </div>
+                    <div class="col-6 text-container mt-5">
+                        <div class="card bg-primary text-light mb-3">
+                            <div class="card-body">
+                                <h2 class="card-title">About Me</h2>
+                                <p class="card-text">
+                                    My name is <span>Rafael Romo</span> and I am in Columbia's <span>Class of 2027</span>, majoring in <span>Computer Science</span> 
+                                    and minoring in <span>Entrepreneurship and Innovation</span>. I am a part of Columbia's <span>Society of Hispanic Professional Engineers</span> 
+                                    (SHPE) and am also on the <span>Division I soccer team</span>. I am a <span>Questbridge Scholar</span> and was awarded a full-ride scholarship
+                                    to Columbia through the college match program. During my free time I enjoy hanging out with <span>friends</span>, listening to and
+                                    making <span>music</span>, watching and playing <span>soccer</span>, and <span>reading.</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card text-bg-info">
+                            <div class="card-body">
+                                <h2 class="card-title">Skills</h2>
+                                <p class="card-text">
+                                    Java, Python, Django, HTML, CSS, C++, Boostrap, MATLab, Adobe Illustrator, Adobe Photoshop
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-4 mt-5 resume">
+                            <button type="button" class="btn btn-outline-success"><a href="RafaelRomo_Resume.pdf" class="custom-link text-success" target="_blank" rel="noopener noreferrer">Resume</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="ff-title">
-                <h7>Here are some fun facts about myself: </h7>
+        </section>
+
+        <section id="projects">
+            <div class="container-fluid full-screen-container bg-black">
+                <h2 class="text-light header">Projects</h2>
+                <p class="text-light">Coming soon...</p>
             </div>
-            <div class="wrapper">
-                <div class="marquee">
-                  <p>
-                    Originally From: <span>San Jose, CA</span> ---- Favorite Soccer Team: <span>Real Madrid</span> ---- Birthday: <span>02/05/2005</span> ---- Favorite Food: <span>Enchiladas</span> ---- 
-                  </p>
-                  <p>
-                    Originally From: <span>San Jose, CA</span> ---- Favorite Soccer Team: <span>Real Madrid</span> ---- Birthday: <span>02/05/2005</span> ---- Favorite Food: <span>Enchiladas</span> ----  
-                  </p>
+        </section>
+
+        
+
+<!-- 
+        <section id="contact">
+            <div class="container-fluid full-screen-container text-bg-dark">
+                <h2 class="text-light header">Contact</h2>
+                <div class="container contact-container">
+                    <div class="row contact-row">
+                        <div class="col-3 contact-col">
+                            <div type="button" class="btn btn-outline-primary">
+                                <a href="https://www.linkedin.com/in/rafael-romo23/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                            </div>
+                        </div>
+                        <div class="col-3 contact-col">
+                            <button type="button" class="btn btn-outline-primary">
+                                <a href="https://github.com/rafaromo23" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            </button>
+                        </div>
+                        <div class="col-2 contact-col">
+                            <button type="button" class="btn btn-outline-primary">
+                                <a href="mailto:rr3573@columbia.edu" target="_blank" rel="noopener noreferrer">Email</a>
+                            </button>
+                        </div>
+                        <div class="col-4 contact-col">
+                            <button type="button" class="btn btn-outline-primary">
+                                <a href="tel:+18316828696" target="_blank" rel="noopener noreferrer">Phone Number</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </section>
+        -->
+
+
+        <!-- CONTACT Section -->
+    <section id="contact">
+        <div class="container-fluid full-screen-container text-bg-dark">
+            <h2 class="header">Contact</h2>
+            <div class="centered-content">
+                <div class="button-row">
+                    <a href="https://www.linkedin.com/in/rafael-romo23/" target="_blank" class="btn btn-primary">LinkedIn</a>
+                    <a href="https://github.com/rafaromo23" target="_blank" class="btn btn-secondary">GitHub</a>
+                    <a href="mailto:rr3573@columbia.edu" target="_blank" class="btn btn-success">Email</a>
+                    <a href="tel:+18316828696" target="_blank" class="btn btn-danger">Phone Number</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- PROJECTS Section -->
-    <section id="projects" class="projects">
-        <div class="projects-container">
-            <h3>Projects</h3>
-            <p class="project-names">Coming Soon... </p>
-        </div>
-    </section>
 
-    <!-- CONTACT Section -->
-    <section id="contact" class="contact">
-        <div class="contact-container">
-            <h4>Contact Me!</h4>
-        </div>
-        <div class="contact-links">
-            <ul>
-                <li><a href="https://www.linkedin.com/in/rafael-romo23/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                <li><a href="https://github.com/rafaromo23" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                <li><a href="mailto:rr3573@columbia.edu" target="_blank" rel="noopener noreferrer">Email</a></li>
-                <li><a href="tel:+18316828696" target="_blank" rel="noopener noreferrer">Phone Number</a></li>
-            </ul>
-        </div>
-    </section>  
 
-    <!-- FOOTER Section -->
-    <footer id="footer" class="footer">
-        <p class="created-by">* Created By Rafael Romo</p>
-    </footer>
-</body>
+
+
+
+        <script src="myscript.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    </body>
 </html>
